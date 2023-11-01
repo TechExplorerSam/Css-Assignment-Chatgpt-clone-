@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+
+}
+.maincontent{
+  width:100%;
+  top: 0;
+  right: 0;
+  height: 200vh;
+ position: fixed;
+ overflow: hidden;
+  
+}
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 420px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    
+    
+  }
+
+  
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px 12px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: black;
+    color: white;
+   
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    border-radius: 8px;
+  }
+.active{
+      display: flex;
+      position: absolute;
+     height: 20px;
+     width: 70%;
+     background-color: black;
+     border-radius: 10px;
+     left: 15px;
+     padding-left: 5px;
+     border: 1px solid gray;
+}
+.Yesterday{
+  position:relative;
+  top: 37px;
+ left: 12px;
+ color: gray;
+ }
+
+ .Previous7days{
+  color: gray;
+ }
+ .Previous30days{
+  color: gray;
+ }
+ .icon-close{
+  cursor: pointer;
+  left: 20px;
+  position: absolute;
+ }
+ .close{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  object-fit:contain;
+  right: -49px;
+  left: 340px;
+  border-radius: 8px;
+ }
+
+ .chatgpt{
+  
+ overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.83);
+
+ }
+ .chat-heading{
+  position: absolute;
+  left: 970px;
+  top: 150px;
+  color: white;
+  opacity: 0.3;
+  font-weight: 600;
+  font-size: 2.25rem;
+    line-height: 2.5rem;
+ }
+
+ .message{
+  position: relative;
+  margin-top: 20px;
+  top: 460px;
+  left: 672px;
+  width: 820px;
+  height: 55px;
+  border-radius: 8px;
+
+ }
+ input{
+  background-color:  rgba(0, 0, 0, 0.033);
+ }
+
+ .additional-info{
+  position: relative;
+  top: 450px;
+  left: 850px;
+  color: white;
+ }
+ .send-message{
+  position: absolute;
+  background-color: rgb(14, 209, 14);
+  color: white;
+  top: 691px;
+  left:1440px;
+  height: 3rem;
+    width: 3rem;
+  border-radius: 8px;
+  text-align: center;
+ }
+ .bibi-send{
+  position:absolute;
+  top:20px;
+  left: 15px;
+ }
+ .user-image{
+  position:relative;
+  top:-10px;
+  border-radius: 320px;
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+ }
+ .user-email{
+  position:relative;
+  bottom: 30px;
+  display: inline;
+  left: 15px;
+  font-size: 22px;
+  
+ }
+ .user-img{
+  position: relative;
+  height: 30px;
+ }
+
+ .three-circles{
+  top: 9px;
+  padding-left: 105px;
+  display: inline;
+ }
+ 
+ .sample-templates{
+  display: grid;
+ }
+ .template-1{
+  position: relative;
+  left: 690px;
+  top: 530px;
+  height: 50px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid gray;
+ }
+
+ .template-2{
+  position: relative;
+  left: 690px;
+  top: 540px;
+  height: 50px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid gray;
+ }
+ .template-3{
+  position: relative;
+  left: 1019px;
+  top: 426px;
+  height: 50px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid gray;
+ }
+ .template-4{
+  position: relative;
+  left: 1019px;
+  top: 436px;
+  height: 50px;
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid gray;
+ }
+ .trip{
+  color: white;
+  text-decoration: none;
+ }
+ @media screen and (max-width: 768px) {
+  /* Media query for smaller screens */
+  .sidebar {
+      display: none; /* Hide the sidebar on smaller screens */
+  }
+
+  .chatgpt {
+      padding-left: 20px; /* Adjust the padding for content */
+  }
+
+  .chat-heading,
+  .message,
+  .additional-info,
+  .user-img,
+  .template-1,
+  .template-2,
+  .template-3,
+  .template-4 {
+      margin: 20px; /* Add margin to center content on smaller screens */
+      width: calc(100% - 40px); /* Adjust the width for full width */
+  }
+}
