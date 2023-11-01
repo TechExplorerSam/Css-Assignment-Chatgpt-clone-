@@ -114,10 +114,12 @@ body{
   width: 820px;
   height: 55px;
   border-radius: 8px;
+    
 
  }
  input{
   background-color:  rgba(0, 0, 0, 0.033);
+      color:white;
  }
 
  .additional-info{
